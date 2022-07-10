@@ -1,0 +1,12 @@
+.rounded-image {
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+}
+.avtar-name {
+  padding-left: 10px;
+  padding-top: 3px;
+}

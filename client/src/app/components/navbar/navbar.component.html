@@ -1,0 +1,96 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <h1>Glitter</h1>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            *ngIf="LoggedInId()"
+            class="nav-link"
+            aria-current="page"
+            routerLink="/playground"
+            >Playground</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            *ngIf="LoggedInId()"
+            class="nav-link"
+            aria-current="page"
+            routerLink="/followers"
+            >Followers</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            *ngIf="LoggedInId()"
+            class="nav-link"
+            aria-current="page"
+            routerLink="/following"
+            >Following</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            *ngIf="LoggedInId()"
+            class="nav-link"
+            aria-current="page"
+            routerLink="/search"
+            >Search</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            *ngIf="LoggedInId()"
+            class="nav-link"
+            aria-current="page"
+            routerLink="/analytics"
+            >Analytics</a
+          >
+        </li>
+      </ul>
+      <div>
+        <ul class="nav navbar-nav">
+          <li *ngIf="!LoggedInId()" class="nav-item">
+            <a routerLink="/user/register" class="nav-link">Sign Up</a>
+          </li>
+          <li *ngIf="!LoggedInId()" class="nav-item">
+            <a routerLink="/" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item" *ngIf="LoggedInId()">
+            <!-- Button trigger modal -->
+            <a
+              class="nav-link"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              PostTweet
+            </a>
+          </li>
+          <li *ngIf="LoggedInId()" class="nav-item">
+            <a class="nav-link">{{ LoggedInUserName() }} </a>
+          </li>
+          <li class="nav-item">
+            <a (click)="onLogout()" *ngIf="LoggedInId()" class="nav-link"
+              >Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

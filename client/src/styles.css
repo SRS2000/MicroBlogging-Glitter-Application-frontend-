@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/alertifyjs/build/css/alertify.min.css";
+@import "../node_modules/alertifyjs/build/css/themes/bootstrap.min.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+}
+.form-header {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-color: #023e8a;
+}
+
+.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.error-block {
+  color: red;
+}
+
+.form-control:focus {
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.follow {
+  background-color: #0077b6;
+  color: white;
+
+  border: none;
+}
+.follow:hover {
+  background-color: #023e8a;
+  color: white;
+}
+.unfollow {
+  background-color: #023e8a;
+  border: none;
+  color: white;
+}
+.unfollow:hover {
+  background-color: #0077b6;
+  color: white;
+}

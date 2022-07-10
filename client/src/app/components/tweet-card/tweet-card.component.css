@@ -1,0 +1,43 @@
+.rounded-image {
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+}
+.avtar-name {
+  padding-left: 10px;
+  padding-top: 3px;
+}
+.fa-heart::before {
+  cursor: pointer;
+}
+
+.icon-event {
+  pointer-events: none;
+}
+.icon-event::before {
+  pointer-events: all;
+}
+
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
+.dropdown-item:hover {
+  background-color: #023e8a;
+  color: white;
+}
+.modal-header {
+  background-color: #023e8a;
+  font-size: larger;
+  font-weight: bolder;
+
+  color: white;
+}
+.modal-body {
+  background-color: #f2f2f2;
+}

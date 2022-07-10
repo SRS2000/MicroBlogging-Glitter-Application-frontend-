@@ -1,0 +1,8 @@
+.rounded-image {
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+  width: 100px;
+}

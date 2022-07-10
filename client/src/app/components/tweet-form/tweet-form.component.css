@@ -1,0 +1,16 @@
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
+.modal-header {
+  background-color: #023e8a;
+  font-size: larger;
+  font-weight: bolder;
+
+  color: white;
+}
+.modal-body {
+  background-color: #f2f2f2;
+}

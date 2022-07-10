@@ -1,0 +1,13 @@
+<div class="container w-50 mt-5 mb-5">
+  <div class="row d-flex align-items-center justify-content-center">
+    <app-tweet-card
+      *ngFor="let tweet of tweets"
+      class="col-12 my-3"
+      (onDeleteTweet)="deleteTweet(tweet)"
+      (onEditTweet)="editTweet(tweet)"
+      (onLikeTweet)="likeTweet(tweet)"
+      (onDisLikeTweet)="disLikeTweet(tweet)"
+      [tweet]="tweet"
+    ></app-tweet-card>
+  </div>
+</div>

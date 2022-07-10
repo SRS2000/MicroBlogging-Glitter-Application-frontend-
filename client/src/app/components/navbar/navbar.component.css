@@ -1,0 +1,24 @@
+/* navbar  */
+.navbar {
+  background-color: #028a0d;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.navbar a {
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover {
+  scale: 1.01;
+  color: #a3b1b4;
+}
+
+.logo {
+  height: 45px;
+  width: 80px;
+  /* border-radius: 16px; */
+}
